@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: codecheckout
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
       - name: update application.properties file
         run: 
           sed -i "s/^jdbc.userame.*.jdbc.username\=${{secrets.RDS_USER}}/" src/main/resources/application.properties
